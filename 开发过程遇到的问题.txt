@@ -1,0 +1,6 @@
+1、头部透明度问题
+如果给父级header加了透明度了，那么子级元素也会继承透明度。首先我想到的是用background-color：rgba，但是这个在IE6-8下不兼容，然后我想到的是在准备一个盒子，只给他设置透明度样式，然后将header和这个盒子设为绝对定位堆叠在一起，header在上面，这样就解决了。猎豹直接是给header加了一个灰颜色的背景图片，这样会浪费性能
+
+2、连续点击左右按钮的时候，动画执行非常快，用户体验不好，通过搜索资料我发现css3有一个 pointerEvents属性，pointerEvents = none表示当前元素的绑定事件无效；pointerEvents = auto表示当前元素的绑定事件有效
+
+3. https://lijingxiang888.github.io/project-liebao/

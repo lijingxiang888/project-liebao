@@ -39,33 +39,34 @@
 }
 
 .header .nav a {
+    position: relative;
     display: inline-block;
     padding: 0 30px;
     color: #f4f4f4;
     -webkit-user-select: none;
 }
-/*.header .nav a i {*/
-    /*position: absolute;*/
-    /*z-index: 11;*/
-    /*top: 0;*/
-    /*left: 50%;*/
-    /*margin-left: 0;*/
-    /*width: 0;*/
-    /*height: 89px;*/
-    /*background: #000;*/
-    /*opacity: 0.1;*/
-    /*filter: alpha(opacity=10);*/
-/*}*/
+.header .nav a i {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 50%;
+    margin-left: 0;
+    width: 0;
+    height: 89px;
+    background: #000;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
 
-/*.header .nav a:hover i {*/
-    /*-webkit-transition: all .2s linear 0s;*/
-    /*-moz-transition: all .2s linear 0s;*/
-    /*-ms-transition: all .2s linear 0s;*/
-    /*-o-transition: all .2s linear 0s;*/
-    /*transition: all .2s linear 0s;*/
-    /*margin-left: -50%;*/
-    /*width: 100%;*/
-/*}*/
+.header .nav a:hover i {
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+    margin-left: -50%;
+    width: 100%;
+}
 
 .colWrap {
     width: 100%;
@@ -93,9 +94,7 @@
 
 .list li a:hover .icon-bg {
     -webkit-animation: listAnimate .4s linear both;
-    -moz-transition: listAnimate .4s linear both;
     -ms-transition: listAnimate .4s linear both;
-    -o-transition: listAnimate .4s linear both;
     animation: listAnimate .4s linear both;
 
 }
